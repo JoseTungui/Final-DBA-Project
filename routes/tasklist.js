@@ -20,7 +20,7 @@ TaskList.prototype = {
             }
 
             res.render('index', {
-                title: 'My ToDo List ',
+                title: 'Northwind Db ',
                 tasks: items
             });
         });

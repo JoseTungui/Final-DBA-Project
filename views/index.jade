@@ -2,15 +2,25 @@ extends layout
 
 block content
   h1 #{title}
+  hr
+  form.well(action="/addtask", method="post")
+    label Item TerritoryID:
+    input(name="TerritoryID", type="textbox")
+    label Item TerritoryDescription:
+    input(name="TerritoryDescription", type="textbox")
+    label Item RegionID:
+    input(name="RegionID", type="textbox")
+    br
+    button.btn(type="submit") Add item
   br
-
+  
   form(action="/completetask", method="post")
     table.table.table-striped.table-bordered
       tr
         td TerritoryID
         td TerritoryDescription
         td RegionID
-        td Complete
+        td Delete
       if (typeof tasks === "undefined")
         tr
           td
@@ -22,14 +32,5 @@ block content
             td #{task.RegionID}
             td
               input(type="checkbox", name="#{task.id}", value="#{!task.completed}", checked=task.completed)
-    button.btn(type="submit") Update tasks
-  hr
-  form.well(action="/addtask", method="post")
-    label Item TerritoryID:
-    input(name="TerritoryID", type="textbox")
-    label Item TerritoryDescription:
-    input(name="TerritoryDescription", type="textbox")
-    label Item RegionID:
-    input(name="RegionID", type="textbox")
-    br
-    button.btn(type="submit") Add item
+    button.btn(type="submit") Delete
+  
