@@ -20,7 +20,7 @@ TaskList.prototype = {
             }
 
             res.render('index', {
-                title: 'Northwind Db ',
+                title: 'Territories',
                 tasks: items
             });
         });
