@@ -11,11 +11,7 @@ TaskList.prototype = {
         var self = this;
 
         var querySpec = {
-            query: 'SELECT * FROM root r WHERE r.completed=@completed',
-            parameters: [{
-                name: '@completed',
-                value: false
-            }]
+            query: 'SELECT * FROM root',
         };
 
         self.taskDao.find(querySpec, function (err, items) {
