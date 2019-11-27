@@ -7,7 +7,35 @@ html
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       div.navbar-header
-        a.navbar-brand(href='#') Northwind Db
+        a.navbar-brand(href='http://localhost:3000/') Northwind Db
+      div.navbar-header
+        li.dropdown.btn.btn-success
+          span.glyphicon.glyphicon-th-list
+            |  Colections 
+            span.caret
+          ul.dropdown-menu.dropdown-toggle(data-toggle="dropdown")
+            li
+              a(href='https://www.google.com/') Categories
+            li 
+              a(href="#") Customers
+            li
+              a(href="#") Employees
+            li 
+              a(href="#") Employee-Territory
+            li
+              a(href="#") Order-Details
+            li 
+              a(href="#") Orders
+            li
+              a(href="#") Products
+            li 
+              a(href="#") Region
+            li
+              a(href="#") Shippers
+            li 
+              a(href="#") Suppliers
+            li 
+              a(href="#") Territory
     block content
     script(src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js')
     script(src='//ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js')
