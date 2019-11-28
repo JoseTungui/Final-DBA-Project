@@ -1,9 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif; 
 }
 a {
-  color: #00B7FF;
+  color: #00B7FF; 
 }
 .well label {
   display: block;
@@ -12,8 +12,9 @@ a {
   margin-bottom: 5px;
 }
 .btn {
-  margin-top: 5px;
-  border: outset 1px #C8C8C8;
+  margin-top: 9px;
+  border: outset 2px rgb(17, 112, 33); 
+  
 }
 
 /* para el drop down de las colecciones */
@@ -24,7 +25,7 @@ a {color: black;margin: 5px; text-decoration: none;}
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; 
     margin-top: 0;
 }
 
@@ -35,3 +36,9 @@ a {color: black;margin: 5px; text-decoration: none;}
     visibility: hidden;
     margin-top: -1px;
 }
+
+span{
+  color: black;
+  font: 20px arial;
+}
+
